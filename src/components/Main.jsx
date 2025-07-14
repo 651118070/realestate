@@ -1,12 +1,13 @@
 import React from "react";
 import { Navbar } from "./Navbar";
 import { Button } from "@/components/ui/button";
+import { assets } from "../assets/assets";
 
 export  function Main() {
  
 
   return (
-    <div id="home" className="background flex flex-col  justify-between gap-3 px-4 h-[400px] md:h-[700px] w-full relative">
+    <div id="home" style={{ backgroundImage: `url(${assets.header_img})` }} className="flex flex-col  justify-between gap-3 px-4 h-[400px] md:h-[700px] w-full relative">
       <Navbar />
       <section className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
     <p className="text-lg flex mx-auto md:px-0 pl-3 text-white font-mono md:text-6xl font-semibold mb-4 max-w-2xl">Explore Homes that fit your dreams</p>
