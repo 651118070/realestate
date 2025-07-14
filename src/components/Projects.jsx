@@ -56,6 +56,7 @@ export default function Projects() {
                     <img
                       src={c.image}
                       alt={c.name}
+                      loading="lazy"
                       className="w-full h-[300px] object-cover"
                     />
                     <div className="absolute bottom-0 left-0 w-64 h-20 bg-white z-10  p-4 text-center">
